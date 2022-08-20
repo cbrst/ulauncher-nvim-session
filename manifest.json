@@ -1,0 +1,40 @@
+{
+	"required_api_version": "^2.0.0",
+	"name": "Neovim Sessions",
+	"description": "Launch Neovim Sessions from Ulauncher",
+	"developer_name": "Christian 'cbrst' Brassat",
+	"icon": "images/icon.png",
+	"options": {
+		"query_debounce": 0.1
+	},
+	"preferences": [
+		{
+			"id": "nvim-session",
+			"type": "keyword",
+			"name": "Neovim Session",
+			"description": "Launch Neovim Sessions from Ulauncher",
+			"default_value": "nv"
+		},
+		{
+			"id": "nvim-session-store",
+			"type": "input",
+			"name": "Session storage location",
+			"description": "Path to the session files",
+			"default_value": "~/.local/share/nvim/session"
+		},
+		{
+			"id": "nvim-cmd",
+			"type": "input",
+			"name": "Neovim command",
+			"description": "Command to launch neovim",
+			"default_value": "nvim-gtk -- -S"
+		},
+		{
+			"id": "fzf-cmd",
+			"type": "input",
+			"name": "FZF command",
+			"description": "Command to filter the results list",
+			"default_value": "fzf"
+		}
+	]
+}
